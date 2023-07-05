@@ -18,5 +18,7 @@ Select Run 'app' from the Run menu in Android Studio.
 
 ## How to Use
 Create Overlay: Click on the 'Create Overlay' button to create an overlay that blocks the status bar.
+
 Stop Overlay: Click on the 'Stop Overlay' button to disable the overlay.
+
 Manage App Permissions: Click on the 'App Permissions' button to manage the app's permissions.
