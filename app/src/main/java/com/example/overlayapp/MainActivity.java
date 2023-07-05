@@ -94,9 +94,6 @@ public class MainActivity extends AppCompatActivity {
         if (wifiLock != null && wifiLock.isHeld()) {
             wifiLock.release();
         }
-
-        // Perform any necessary actions to keep the app running, such as showing a message or returning to a specific screen.
-        // You can customize this part based on your app's requirements.
         Toast.makeText(this, "Overlay stopped", Toast.LENGTH_SHORT).show();
     }
 
@@ -135,8 +132,6 @@ public class MainActivity extends AppCompatActivity {
     protected void onDestroy() {
         super.onDestroy();
         if (overlayView != null) {
-            // Perform any necessary cleanup here
-
             // Release the WifiLock
             WifiManager wifiManager = (WifiManager) getApplicationContext().getSystemService(Context.WIFI_SERVICE);
             WifiManager.WifiLock wifiLock = wifiManager.createWifiLock(WifiManager.WIFI_MODE_FULL, "MyWifiLock");
