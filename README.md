@@ -5,9 +5,7 @@ The OverlayApp is an Android application that allows you to create an overlay vi
 
 ## Installation and Setup
 Prerequisites: Android Studio and Android SDK
-
-Clone the repository:
-`git clone https://github.com/{username}/OverlayApp.git`
+Clone the repository via `git clone`
 
 Open the project in Android Studio:
 `cd OverlayApp`
