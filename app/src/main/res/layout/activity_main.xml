@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@android:color/black"
+    tools:context=".MainActivity">
+
+    <com.example.overlayapp.OverlayView
+        android:id="@+id/overlayView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <TextView
+        android:id="@+id/descriptionTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/overlayButton"
+        android:layout_marginBottom="35dp"
+        android:gravity="center"
+        android:text="The OverlayApp is an Android application that allows you to create an overlay view on top of other apps. The overlay view can block the status bar and prevent interaction with it. By enabling the overlay, you can keep the Wi-Fi radio awake using a WifiLock to ensure uninterrupted Wi-Fi connectivity."
+        android:textColor="@android:color/white"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/settingsButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/stopOverlayButton"
+        android:layout_centerHorizontal="true"
+        android:text="App Permissions"
+        android:onClick="openSettings"
+        android:backgroundTint="@android:color/darker_gray"
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:id="@+id/overlayButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="Create Overlay"
+        android:onClick="createOverlay"
+        android:backgroundTint="@android:color/darker_gray"
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:id="@+id/stopOverlayButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/overlayButton"
+        android:layout_centerHorizontal="true"
+        android:text="Stop Overlay"
+        android:onClick="stopOverlay"
+        android:backgroundTint="@android:color/darker_gray"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:id="@+id/overlayStatusTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Overlay: Off"
+        android:textColor="@android:color/white"
+        android:textSize="16sp" />
+
+</RelativeLayout>
