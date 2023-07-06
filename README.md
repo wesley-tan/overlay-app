@@ -1,7 +1,8 @@
 # OverlayApp
 
 ## Description
-The OverlayApp is an Android application that allows you to create an overlay view on top of other apps. The overlay view can block the status bar and prevent interaction with it. By enabling the overlay, you can keep the Wi-Fi radio awake using a WifiLock to ensure uninterrupted Wi-Fi connectivity.
+The OverlayApp is an Android application that allows you to create an overlay view on top of other apps. The overlay view can block the status bar and prevent interaction with it. By enabling the overlay, you can keep the Wi-Fi radio awake using a WifiLock to ensure uninterrupted Wi-Fi connectivity. In addition, you can use other applications and while the overlay is on, the Wi-Fi radio will be kept awake.
+
 Built using Android Studio.
 
 ![overlayapp-screenshot](https://github.com/wesley-tan/OverlayApp/assets/98197696/99bd9ea1-f357-493e-baa7-91845a66fc66)
